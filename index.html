@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BPCorrect</title>
+  <link rel="icon" href="images/icon.ico">
+
+  <!-- CSS Stylesheets (bootstrap & own) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/nullstyle.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Icofont -->
+  <link rel="stylesheet" href="icofont/icofont.min.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bcc546957c.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="images/stevara_logo.png" class="logo_img" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link colored_link" href="#intro"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#for_patients">For Patients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#howworks">For Healthcare Professionals</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://www.bpcorrect.com/#/faq">FAQ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Getting Started
+          </a>
+          <div class="dropdown-content" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Web Portal</a>
+            <a class="dropdown-item" href="#">App Portal</a>
+          </div>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <button type="button" class="btn btn-outline-primary">Healthcare Professional Login</button></li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-success">Register a Prictice</button></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <section class="intro_section" id="intro">
+    <div class="row">
+      <div class="col-xl-7 intro_column1">
+        <h1 class="main_header">A scientifically based solution for monitoring blood
+          pressure in the safety and privacy of your home
+        </h1>
+
+        <a href="https://www.youtube.com/watch?v=0tROmDFmLtA" data-youtube-id="0tROmDFmLtA" href="#" class="cta js-trigger-video-modal">
+          <span>Watch The Video</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+      </div>
+      <div class="col-xl-5 intro_column2">
+        <img src="images/woman-bp.png" alt="" class="intro_img">
+      </div>
+    </div>
+  </section>
+
+  <!-- video modal -->
+  <section class="video-modal">
+
+    <!-- Modal Content Wrapper -->
+    <div id="video-modal-content" class="video-modal-content">
+
+      <!-- iframe -->
+      <iframe id="youtube" width="100%" height="100%" frameborder="0" allow="autoplay" allowfullscreen src=></iframe>
+
+      <a href="#" class="close-video-modal">
+        <!-- X close video icon -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" width="24" height="24">
+
+          <g id="icon-x-close">
+            <path fill="#ffffff"
+              d="M30.3448276,31.4576271 C29.9059965,31.4572473 29.4852797,31.2855701 29.1751724,30.980339 L0.485517241,2.77694915 C-0.122171278,2.13584324 -0.104240278,1.13679247 0.52607603,0.517159487 C1.15639234,-0.102473494 2.17266813,-0.120100579 2.82482759,0.477288136 L31.5144828,28.680678 C31.9872448,29.1460053 32.1285698,29.8453523 31.8726333,30.4529866 C31.6166968,31.0606209 31.0138299,31.4570487 30.3448276,31.4576271 Z"
+              id="Shape"></path>
+            <path fill="#ffffff"
+              d="M1.65517241,31.4576271 C0.986170142,31.4570487 0.383303157,31.0606209 0.127366673,30.4529866 C-0.12856981,29.8453523 0.0127551942,29.1460053 0.485517241,28.680678 L29.1751724,0.477288136 C29.8273319,-0.120100579 30.8436077,-0.102473494 31.473924,0.517159487 C32.1042403,1.13679247 32.1221713,2.13584324 31.5144828,2.77694915 L2.82482759,30.980339 C2.51472031,31.2855701 2.09400353,31.4572473 1.65517241,31.4576271 Z"
+              id="Shape"></path>
+          </g>
+
+        </svg>
+      </a>
+
+    </div><!-- end modal content wrapper -->
+
+
+    <!-- clickable overlay element -->
+    <div class="overlay"></div>
+
+
+  </section>
+  <!-- end video modal -->
+
+  <section class="for_patients_section" id="for_patients">
+    <h2>For Patients</h2>
+    <div class=" app_row">
+      <div class="col-md-6 offset-md-3 offset-sm-0">
+        <div class="card for_patients_card">
+          <p>These days, conducting clinical assessments in the safety and privacy
+            of your home may be preferable to going to a doctor’s office or hospital.
+            Also, blood pressure measured in the doctor’s office is not always
+            accurate. Experts agree that checking your blood pressure at home in
+            the morning and in the evening for 7 days in a row is the best way to
+            determine your true blood pressure. The BPCorrect app helps you do that by:</p>
+          <ul class="for_patiens_list">
+            <li>Connecting to affordable and accurate home blood pressure monitors</li>
+            <li>Providing step-by-step instructions on how to correctly measure blood pressure</li>
+            <li>Reminding you to check your blood pressure for 7 days in a row</li>
+            <li>Summarizing your results</li>
+            <li>Providing links to information about managing your blood pressure</li>
+            <li>Allowing you to share your blood pressure measurements with your doctor</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="col-md-5 monitors">
+        <h4>The BPCorrect app will work with the following validated and accurate
+          home blood pressure monitors*:</h4>
+        <div class="monitor_example"><a href="https://www.amazon.com/Medical-Pressure-Monitor-Bluetooth-UA-651BLE/dp/B00MXTE7CS/"><img src="images/A&D-UA-651-BLE.jpg" alt="" class="monitor_img"> A&D UA 651 BLE</a></div>
+        <div class="monitor_example"><a href="https://www.amazon.com/Omron-Pressure-Bluetooth-Storesup-Readings/dp/B07RYBKNC2"><img src="images/Omron-BP5250.jpg" alt="" class="monitor_img"> Omron BP5250</a></div>
+        <div class="monitor_example"><a href="https://www.amazon.com/Omron-Bluetooth-Wireless-Pressure-Compatible/dp/B01MRL790Q"><img src="images/Omron-Evolv.jpg" alt="" class="monitor_img"> Omron Evolv</a></div>
+        <p class="separately">*must be purchased separately</p>
+      </div> -->
+  </section>
+
+  <section class="monitors_section" id="monitors">
+    <div class="">
+      <!-- <img src="images/woman-bp.png" alt="" class="app_img"> -->
+      <p class="monitors_p">The BPCorrect app will work with the following validated and accurate
+        home blood pressure monitors*:</p>
+      <div class="row monitors2">
+        <div class="col-md-12 col-lg-3 monitor_example"><a href="https://www.amazon.com/Medical-Pressure-Monitor-Bluetooth-UA-651BLE/dp/B00MXTE7CS/"><img src="images/A&D-UA-651-BLE.jpg" alt="" class="monitor_img"> A&D UA 651 BLE</a>
+        </div>
+        <div class="col-sm-12 col-lg-3 monitor_example">
+          <a href="https://www.amazon.com/Omron-Pressure-Bluetooth-Storesup-Readings/dp/B07RYBKNC2"><img src="images/Omron-BP5250.jpg" alt="" class="monitor_img"> Omron BP5250</a>
+        </div>
+        <div class="col-sm-12 col-lg-3 monitor_example">
+          <a href="https://www.amazon.com/Omron-Bluetooth-Wireless-Pressure-Compatible/dp/B01MRL790Q"><img src="images/Omron-Evolv.jpg" alt="" class="monitor_img"> Omron Evolv</a>
+        </div>
+        <p class="separately2">*must be purchased separately</p>
+      </div>
+
+      <div class="download">
+        <p>Coming soon to the Apple App Store and the Google Play Store!</p>
+        <i class="fab fa-app-store"></i><i class="fab fa-google-play"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="patient_why_section" id="patient_why">
+    <div class="middle_div">
+      <h3 class="middle_h3">Why People Choose <span>BPCorrect</span>?</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="organisation"><i class="far fa-check-circle"></i><img src="images/AHA_logo.png" alt="" class="organisation_logo"></div>
+          <div class="organisation"><i class="far fa-check-circle"></i><img src="images/uspstf_logo.png" alt="" class="organisation_logo"></div>
+          <div class="organisation"><i class="far fa-check-circle"></i><img src="images/MH_logo.png" alt="" class="organisation_logo"></div>
+        </div>
+        <div class="col-sm-6 right_column">
+          <p class="middle_p">The <strong>American Heart Association (AHA)</strong>, the <strong>United States
+              Preventive Services Task Force</strong> and the <strong>Million Hearts Initiative</strong> all
+            recommend home blood pressure monitoring prior to the diagnosis of
+            hypertension and for its management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="howworks_section" id="howworks">
+    <div class="howworks_desc">
+      <h2 class="howworks_h2">For Healthcare Professionals</h2>
+      <p class="howworks p">A complete home blood pressure monitoring platform designed for primary care practices by primary care doctors.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-lg-2 offset-lg-3">
+        <div class="card">
+          <div class="round"><img src="images/begin1.png" alt="" class="step_icon">
+            <div class="number">
+              <h2>1</h2>
+            </div>
+          </div>
+          <p class="step_name">Mobile App</p>
+          <p class="step_desc">Connects to validated BP monitors and instructs patients to accurately monitor BP</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-2">
+        <div class="card">
+          <div class="round"><img src="images/begin2.png" alt="" class="step_icon">
+            <div class="number">
+              <h2>2</h2>
+            </div>
+          </div>
+          <p class="step_name">Provider Portal</p>
+          <p class="step_desc">Provides summaries of patients’ BP measurements</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-2">
+        <div class="card">
+          <div class="round"><img src="images/begin3.png" alt="" class="step_icon">
+            <div class="number">
+              <h2>3</h2>
+            </div>
+          </div>
+          <p class="step_name">Complete Remote Monitoring Platform</p>
+          <p class="step_desc">Engaged patients and improved management of hypertension</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile_app_section" id="patient_app">
+    <div class="row app_row">
+      <div class="col-md-6 picture_col">
+        <img src="images/img1.png" alt="" class="app_img">
+      </div>
+      <div class="col-md-6">
+        <h2>The BPCorrect App</h2>
+        <ul class="features_list">
+          <li> Integrates with clinically validated, affordable home BP monitors</li>
+          <li> Includes a 7-day BP monitoring period recommended by the AHA </li>
+          <li> Reminds patients when BP measurements are due</li>
+          <li> Using video and text, provides step-by-step patient instructions for BP measurement </li>
+          <li> Includes timers for the appropriate rest intervals before and between BP measurements </li>
+          <li> Aggregates BP values and displays summaries for patients</li>
+          <li> De-emphasizes focus on individual measurements </li>
+          <li> Incorporates lifestyle education to lower BP </li>
+          <li> Securely sends all BP measures to the BPCorrect Clinician Portal </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="portal_section" id="portal">
+    <div class="row app_row">
+      <div class="col-md-6">
+        <h2>The BPCorrect Clinician Portal</h2>
+        <ul class="features_list">
+          <li> Provides reports on individual patient’s progress on obtaining sufficient measurements to determine an accurate assessment of the patient’s blood pressure</li>
+          <li> Displays the average blood pressure value and its interpretation based on AHA guidelines once a sufficient number of measurements have been obtained</li>
+          <li> Includes a dashboard highlighting patients with average blood pressures outside of range</li>
+          <li> Includes ability to create accounts for clinical staff members to review blood pressure measurements</li>
+        </ul>
+      </div>
+      <div class="col-md-6 picture_col">
+        <img src="images/laptop-img.png" alt="" class="app_img">
+      </div>
+      <!-- <div class="plus"><i class="icofont-plus-circle"></i>
+        <p>The BPCorrect platform currently works with A&D UA-651BLE and Transtek TMB-1491-BS blood pressure monitors.
+          BPCorrect offers preferred pricing on these monitors.</p>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="monitors_section" id="monitors">
+    <div class="">
+      <!-- <img src="images/woman-bp.png" alt="" class="app_img"> -->
+      <p class="monitors_p">The BPCorrect app will work with the following validated and accurate
+        home blood pressure monitors*:</p>
+      <div class="row monitors2">
+        <div class="col-lg-3 monitor_example">
+          <div class=""><a href="https://www.amazon.com/Medical-Pressure-Monitor-Bluetooth-UA-651BLE/dp/B00MXTE7CS/"><img src="images/A&D-UA-651-BLE.jpg" alt="" class="monitor_img"> A&D UA 651 BLE</a></div>
+        </div>
+        <div class="col-lg-3 monitor_example">
+          <div class=""><a href="https://www.amazon.com/Omron-Pressure-Bluetooth-Storesup-Readings/dp/B07RYBKNC2"><img src="images/Omron-BP5250.jpg" alt="" class="monitor_img"> Omron BP5250</a></div>
+        </div>
+        <div class="col-lg-3 monitor_example">
+          <div class=""><a href="https://www.amazon.com/Omron-Bluetooth-Wireless-Pressure-Compatible/dp/B01MRL790Q"><img src="images/Omron-Evolv.jpg" alt="" class="monitor_img"> Omron Evolv</a></div>
+        </div>
+        <p class="separately2">*must be purchased separately</p>
+      </div>
+
+      <div class="plus"><i class="icofont-plus-circle"></i>
+        <p>BPCorrect offers preferred pricing on these monitors.<p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about_section" id="about">
+    <div class="about_div">
+      <h2>About Us</h2>
+      <p>BPCorrect was created by Dr. Cara Litvin, a general internist, and Dr. Steven Ornstein, a family physician. Drs. Litvin and Ornstein have conducted numerous NIH and AHRQ funded studies focused on improving the diagnosis and management of
+        chronic diseases in primary care settings. The BPCorrect platform evolves directly from their many years of research and clinical experience.</p>
+    </div>
+  </section>
+
+
+  <section class="sign_up_mail" id="sign_up_mail">
+    <div class="sign_up_mail_div">
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup {
+          background: #fff;
+          clear: left;
+          font: 14px Helvetica, Arial, sans-serif;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+        <form action="https://bpcorrect.us4.list-manage.com/subscribe/post?u=3a779614b6082f18e0aa7c744&amp;id=779b619837" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Sign up to receive BPCorrect updates</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3a779614b6082f18e0aa7c744_779b619837" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+    </div>
+  </section>
+
+  <section class="social_media_section" id="social_media">
+    <div class="social_media">
+      <a href="https://www.facebook.com/BPCorrect/" target="_blank"><i class="fab fa-facebook footer_item"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/30130085" target="_blank"><i class="fab fa-linkedin-in footer_item"></i></a>
+      <div class="footer_item">
+        <a class="email_link" href="mailto:info@bpcorrect.com"><i class="fas fa-at"></i> info@bpcorrect.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Файл JS скриптов -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="tm-hero-btn tm-hero-video-btn">
+  <div class="tm-video-button" data-channel="youtube" data-video-id="0tROmDFmLtA"><i class="icofont-play-alt-3"></i><span class="tm-video-animaiton"><span></span></span></div><span class="tm-video-text">Watch The Video</span>
+</div> -->
