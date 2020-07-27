@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $("#menu").on("click", "a", function(event) {
-    event.preventDefault();
+    //event.preventDefault();
     var id = $(this).attr('href');
     var top = $(id).offset().top;
     $('body,html').animate({
