@@ -477,7 +477,7 @@ iframe#youtube {
   right: 0;
 }
 
-.download {
+.download a {
   text-align: center;
   margin: 1rem auto;
   display: flex;
@@ -799,13 +799,13 @@ iframe#youtube {
 
 /* ABOUT SECTION ---------------------------------------------------------------------- */
 .about_section {
-  padding: 2rem 2rem 3rem;
+  padding: 2rem 2rem 0;
   background-color: #32b6a1;
+  /* max-height: 25rem; */
 }
 
 .about_div {
   max-width: 60rem;
-  /* min-height: 12rem; */
   text-align: center;
   color: #fff;
   margin: 0 auto;
@@ -817,7 +817,7 @@ iframe#youtube {
 
 @media (max-width: 768px) {
   .about_section {
-    padding: 1rem 1rem 1.5rem;
+    padding: 1rem 1rem 0;
   }
 
   .about_div h2 {
@@ -825,123 +825,26 @@ iframe#youtube {
   }
 }
 
-/* CONTACT SECTION -------------------------------------------------------------------- */
-/* .contact_section {
-  padding: 2rem;
-}
-
-.form_div {
-  margin: 0 auto;
-  max-width: 65rem;
-}
-
-.form_div h2 {
-  text-align: center;
-}
-
-.envelope_email {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 17rem;
-  margin: 1.5rem 0;
-}
-
-.envelope_email i {
-  color: #8bc43f;
-  font-size: 2.5rem;
-  border: .05rem solid #ced4da;
-  width: 5rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-name: envelope_animation;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes envelope_animation {
-  0% {
-    color: #8bc43f;
-  }
-
-  50% {
-    color: #32b6a1;
-  }
-
-  1000% {
-    color: #8bc43f;
-  }
-}
-
-.envelope_email h4 {
-  color: #32b6a1;
-}
-
-.form-control {
-  border-color: #32b6a1;
-}
-
-.contact_section label {
-  color: #fff;
-  background-color: #32b6a1;
-  margin: 0;
-  padding: .2rem .5rem;
-}
-
-.button1 {
-  border-radius: 5px;
-  background-color: #32b6a1;
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-size: 1rem;
-  padding: 1rem;
-  width: 12rem;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: .3rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.button1 span {
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 i {
-  position: absolute;
-  color: #fff;
-  opacity: 0;
-  right: 0;
-  transition: 0.5s;
-  font-size: 1.1rem;
-}
-
-.button1:hover {
-  background-color: #8bc43f;
-}
-
-.button1:hover span {
-  padding-right: 25px;
-}
-
-.button1:hover i {
-  opacity: 1;
-  right: 1rem;
-} */
 /* MAIL SECTION ----------------------------------------------------------------------- */
 
-.sign_up_mail {
-  padding: 2.5rem 1rem;
-  background-color: #fff;
+.sign_up_mail_div {
+  position: relative;
+  bottom: -3rem;
+  z-index: 1;
 }
+
 /* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
+#mc_embed_signup {
+  padding: 2rem 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  background: #f8f9fa;
+  clear: left;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+
 #mc_embed_signup form {
   display: block;
   position: relative;
@@ -1016,7 +919,6 @@ iframe#youtube {
   display: block;
   font-weight: bold;
   font-size: 1.8rem !important;
-  padding-bottom: 1rem !important;
   line-height: 2.3rem !important;
   text-align: center !important;
 }
@@ -1080,56 +982,145 @@ iframe#youtube {
   padding: .5em 0;
 }
 
-
-#mc_embed_signup {
-  background: #fff;
-  clear: left;
-  display: flex;
-  justify-content: center;
-}
-
-
 @media (max-width: 768px) {
-  .sign_up_mail {
+  #mc_embed_signup {
     padding: 1rem;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
 
   #mc_embed_signup label {
     font-size: 1.4rem !important;
   }
 }
-/* SOCIAL MEDIA SECTION --------------------------------------------------------------- */
-.social_media {
-  color: #fff;
-  background-color: #32b6a1;
+
+
+/* FOOTER */
+.container_footer {
+  color: rgba(0, 0, 0, .5);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5rem 3rem;
+}
+
+
+.footer_item {
+  display: flex;
+  align-items: center;
+}
+
+.footer_item p {
+  margin-bottom: .8rem;
+}
+
+.footer_img {
+  margin-right: 1rem;
+}
+
+
+.social_media i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.footer_item {
-  font-size: 2rem;
-  margin: 2rem;
-}
-
-.email_link {
+  border: 0.095rem solid rgba(0, 0, 0, .5);
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
   font-size: 1.2rem;
-  color: #fff;
+
+  margin: 0 .3rem
 }
 
-.email_link:hover{
-  color: #fff;
-  text-decoration: underline;
+.social_media i:hover {
+  color: #8bc43f;
+  border-color: #8bc43f;
 }
+
+.footer_download {
+  margin: 0 1rem;
+  max-width: 12rem;
+}
+
+.footer_download a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer_download i {
+  color: #8bc43f;
+  margin-left: .3rem;
+}
+
+.footer_download .fa-app-store {
+  font-size: 2.2rem;
+}
+
+.footer_download .fa-google-play {
+  font-size: 1.9rem;
+}
+
+.policy-and-mail__link:hover {
+  text-decoration: none;
+  color: #8bc43f;
+}
+
 
 @media (max-width: 768px) {
-  .footer_item {
-    font-size: 1.5rem;
-    margin: .6rem;
+  .container_footer {
+    padding: 5rem 3rem 3rem;
   }
 
-  .footer_item p {
-    font-size: 1rem;
+  .social_media {
+    display: block;
+  }
+
+  .footer_download {
+    margin: 0 auto;
+  }
+
+
+  .footer_item {
+    margin: .6rem auto;
+    display: block;
+  }
+
+  .social_media i {
+    margin-bottom: .5rem;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+  .container_footer {
+    display: block;
+    padding: 4rem 2rem 1rem;
+  }
+
+  .footer_item {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .policy-and-mail {
+    margin-bottom: .7rem;
+  }
+
+  .policy-and-mail a {
+    display: block;
+    text-align: center;
   }
 }
