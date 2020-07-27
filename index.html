@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169389560-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169389560-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-169389560-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169389560-1');
+  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,25 +65,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://www.bpcorrect.com/#/faq">FAQ</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Getting Started
-          </a>
-          <div class="dropdown-content" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Web Portal</a>
-            <a class="dropdown-item" href="#">App Portal</a>
-          </div>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <button type="button" class="btn btn-outline-primary">Healthcare Professional Login</button></li>
-        <li class="nav-item">
-          <button type="button" class="btn btn-outline-success">Register a Prictice</button></li> -->
       </ul>
     </div>
   </nav>
@@ -188,10 +172,12 @@
         </div>
         <p class="separately2">*must be purchased separately</p>
       </div>
-
-      <div class="download">
-        <p>Coming soon to the Apple App Store and the Google Play Store!</p>
-        <i class="fab fa-app-store"></i><i class="fab fa-google-play"></i>
+      <div class="mobile-apps">
+        <div class="download">
+          <h4><a href="#">Now Available in the Apple App store</a></h4>
+          <i class="fab fa-app-store"></i></i>
+        </div>
+        <a href="#" class="android-app-link"><i>Android App is coming in August</i></a>
       </div>
 
     </div>
@@ -284,6 +270,7 @@
     <div class="row app_row">
       <div class="col-md-6">
         <h2>The BPCorrect Clinician Portal</h2>
+        <p class="availability_par"><i>Available Fall 2020</i></p>
         <ul class="features_list">
           <li> Provides reports on individual patient’s progress on obtaining sufficient measurements to determine an accurate assessment of the patient’s blood pressure</li>
           <li> Displays the average blood pressure value and its interpretation based on AHA guidelines once a sufficient number of measurements have been obtained</li>

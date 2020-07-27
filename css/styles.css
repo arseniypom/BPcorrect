@@ -448,8 +448,6 @@ iframe#youtube {
   margin-top: 1rem;
   min-width: 19rem;
   max-width: 20rem;
-  /* padding: 0; */
-  /* margin: 0 auto; */
 }
 
 .monitor_img {
@@ -470,38 +468,32 @@ iframe#youtube {
   font-size: 1.2rem;
 }
 
-.separately {
-  font-style: italic;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.mobile-apps {
+  text-align: center;
 }
 
 .download {
-  text-align: center;
   margin: 1rem auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-width: 40rem;
+  max-width: 26rem;
+}
+
+.download a {
+  font-size: inherit;
+}
+
+.download a:hover {
+  color: #1abcfa;
 }
 
 .download i {
-  color: #8bc43f;
+  color: #1abcfa;
   margin-left: 1rem;
-}
-
-.download .fa-app-store {
   font-size: 2.5rem;
 }
 
-.download .fa-google-play {
-  font-size: 2rem;
-}
-
-.download p {
-  margin-left: 2rem;
-}
 
 @media (max-width: 767px) {
   .monitors {
@@ -734,6 +726,11 @@ iframe#youtube {
   padding: 2rem 0 1rem;
 }
 
+.availability_par {
+  text-align: center;
+  margin: .5rem;
+}
+
 @media (max-width: 768px) {
   .portal_section {
     padding: 1rem 0;
@@ -825,116 +822,6 @@ iframe#youtube {
   }
 }
 
-/* CONTACT SECTION -------------------------------------------------------------------- */
-/* .contact_section {
-  padding: 2rem;
-}
-
-.form_div {
-  margin: 0 auto;
-  max-width: 65rem;
-}
-
-.form_div h2 {
-  text-align: center;
-}
-
-.envelope_email {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 17rem;
-  margin: 1.5rem 0;
-}
-
-.envelope_email i {
-  color: #8bc43f;
-  font-size: 2.5rem;
-  border: .05rem solid #ced4da;
-  width: 5rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-name: envelope_animation;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes envelope_animation {
-  0% {
-    color: #8bc43f;
-  }
-
-  50% {
-    color: #32b6a1;
-  }
-
-  1000% {
-    color: #8bc43f;
-  }
-}
-
-.envelope_email h4 {
-  color: #32b6a1;
-}
-
-.form-control {
-  border-color: #32b6a1;
-}
-
-.contact_section label {
-  color: #fff;
-  background-color: #32b6a1;
-  margin: 0;
-  padding: .2rem .5rem;
-}
-
-.button1 {
-  border-radius: 5px;
-  background-color: #32b6a1;
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-size: 1rem;
-  padding: 1rem;
-  width: 12rem;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: .3rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.button1 span {
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 i {
-  position: absolute;
-  color: #fff;
-  opacity: 0;
-  right: 0;
-  transition: 0.5s;
-  font-size: 1.1rem;
-}
-
-.button1:hover {
-  background-color: #8bc43f;
-}
-
-.button1:hover span {
-  padding-right: 25px;
-}
-
-.button1:hover i {
-  opacity: 1;
-  right: 1rem;
-} */
 /* MAIL SECTION ----------------------------------------------------------------------- */
 
 .sign_up_mail {
