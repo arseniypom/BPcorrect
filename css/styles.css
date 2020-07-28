@@ -477,13 +477,17 @@ iframe#youtube {
   right: 0;
 }
 
-.download a {
+.download {
   text-align: center;
   margin: 1rem auto;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-around;
-  max-width: 40rem;
+  justify-content: space-around; */
+  max-width: 25rem;
+}
+
+.download a {
+  font-size: inherit;
 }
 
 .download i {
@@ -499,8 +503,8 @@ iframe#youtube {
   font-size: 2rem;
 }
 
-.download p {
-  margin-left: 2rem;
+.android_app {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -734,6 +738,10 @@ iframe#youtube {
   padding: 2rem 0 1rem;
 }
 
+.availability_par {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .portal_section {
     padding: 1rem 0;
@@ -826,7 +834,6 @@ iframe#youtube {
 }
 
 /* MAIL SECTION ----------------------------------------------------------------------- */
-
 .sign_up_mail_div {
   position: relative;
   bottom: -3rem;
@@ -993,17 +1000,19 @@ iframe#youtube {
   }
 }
 
-
 /* FOOTER */
 .container_footer {
-  color: rgba(0, 0, 0, .5);
-  background-color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  color: #fff;
+  background-color: #24292e;
   padding: 5rem 3rem;
+  text-align: center;
 }
 
+.footer_links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .footer_item {
   display: flex;
@@ -1018,18 +1027,15 @@ iframe#youtube {
   margin-right: 1rem;
 }
 
-
 .social_media i {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 0.095rem solid rgba(0, 0, 0, .5);
+  border: 0.08rem solid #fff;
   border-radius: 100%;
   width: 2rem;
   height: 2rem;
   font-size: 1.2rem;
-
   margin: 0 .3rem
 }
 
@@ -1063,29 +1069,26 @@ iframe#youtube {
   font-size: 1.9rem;
 }
 
+.policy-and-mail__link {
+  margin: 1rem;
+}
+
 .policy-and-mail__link:hover {
   text-decoration: none;
   color: #8bc43f;
 }
-
 
 @media (max-width: 768px) {
   .container_footer {
     padding: 5rem 3rem 3rem;
   }
 
-  .social_media {
-    display: block;
-  }
-
   .footer_download {
     margin: 0 auto;
   }
 
-
   .footer_item {
     margin: .6rem auto;
-    display: block;
   }
 
   .social_media i {
@@ -1093,12 +1096,13 @@ iframe#youtube {
   }
 }
 
-
-
 @media (max-width: 425px) {
   .container_footer {
-    display: block;
     padding: 4rem 2rem 1rem;
+  }
+
+  .footer_links {
+    display: block;
   }
 
   .footer_item {
