@@ -484,20 +484,14 @@ iframe#youtube {
 }
 
 .download a {
-  font-size: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.download i {
-  color: #8bc43f;
-  margin-left: 1rem;
-}
-
-.download .fa-app-store {
-  font-size: 2.5rem;
-}
-
-.download .fa-google-play {
-  font-size: 2rem;
+.download img {
+  max-width: 10rem;
+  margin: 0 auto;
 }
 
 .android_app {
